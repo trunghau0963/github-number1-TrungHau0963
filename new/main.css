@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(202, 206, 212);
+}
+.nav{
+    min-height: 42px;
+    background-color: red;
+    /* 2 thang flex item deu nam ngang */
+    display: flex;
+    /* justify-content mac dinh la flex start ben trai */
+    justify-content: flex-end;
+    /* chuyen ve ben phai hay lat nguoc flex end len dau */
+    justify-content: space-between;
+    /* space between day xa nhau day 2 thang xa nhau */
+}
+.nav-list{
+    padding-left: 0;
+    margin: auto 16px;
+}
+.nav-item{
+    color: aliceblue;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+/* form layout */
+.form-container{
+    max-width: 720px;
+    padding: 32px;
+    margin: 36px auto 0 auto;
+    background-color: #fff;
+}
+.form_row{
+    padding: 8px 0;
+    display: flex;
+}
+.form_label{
+    min-width: 90px;
+}
+.form_input{
+    /* chiem toan bo container/main axis */
+    flex: 1;
+}
+/* Column layout */
+.Column-layout{
+    margin-top: 36px;
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+}
+.column-item{
+    padding:0 16px;
+    /* tat ca item deu co flex 1 thi no chia nhau sao cho bang main axis */
+    /* flex: 1; */
+}
+.sidebar-one{
+    flex: 1;
+
+}
+.sidebar-two{
+    flex: 1;
+
+}
+.main-column{
+    flex: 3;
+}
+/* Feature layout */
+.feature-layout{
+    margin-top: 36px;
+    display: flex;
+    /* basis set main size */
+    /* flex-basis: 30%; */
+    /* around khac between la around co khoang cach ngoai cung  */
+    justify-content: space-around;
+}
+.feature-item{
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+.feature-item:nth-child(){
+
+}
