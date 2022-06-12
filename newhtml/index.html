@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton loading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card loading">
+        <div class="user-info">
+            <div class="logo">
+                <img src="http://picsum.photos/50/50" alt="logo">
+            </div>
+            <div class="name">Trung Hau</div>
+        </div>
+        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam porro ipsa recusandae architecto.
+            Cum sit iste exercitationem blanditiis placeat tempora sunt aliquam dicta autem, totam cupiditate eaque ab
+            quibusdam similique!\</div>
+        </div>
+    </div>
+    <script>
+        setTimeout(() => {
+            document.getElementsByClassName('card')[0].classList.remove('loading');
+        },5000);
+    </script>
+</body>
+
+</html>

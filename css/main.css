@@ -1,0 +1,183 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0,#f733fe,#f5662a);
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar-list {
+    /* mat dau cham dau dong */
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+}
+.header__navbar-items {
+    margin:0 8px ;
+    position: relative;
+    min-height: 26px;
+}
+/* cai nay de tao khoi gia hien qr */
+.has__Qr:hover .header_qr {
+    display: block;
+}
+/* dau , nghia la 2 thang cung css chung duoc */
+.header__navbar-items,
+.header__navbar-items-links {
+    display: inline-block;
+    /* giu tinh chat ke thua va nam tren cung 1 hang */
+    font-size: 1.5rem;
+    /* 15px */
+    color: var(--white-color);
+    text-decoration: none;
+    /* bo dau gach chan cua the a */
+    font-weight: 300;
+}
+.header__navbar-items,
+.header__navbar-items-links,
+.navbar__icon--link {
+    display: inline-flex;
+    align-items: center;
+}
+/* hover di chuot vao lam chu mo di  */
+.header__navbar-items:hover,
+.navbar__icon--link:hover,
+.header__navbar-items-links:hover {
+    /* thay doi con tro chuot khi tro vao */
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+}
+.header__navbar-items--strong {
+    font-weight: 500;
+}
+.separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 14px;
+    border-left: 1px solid #fb9086;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar__icon--link {
+    color: var(--white-color);
+    text-decoration: none
+}
+.header_nav-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+.header__nav-title-nopointer{
+    cursor: text;
+    color: var(--white-color);
+}
+/* qr code */
+.header_qr {
+    background-color: var(--white-color);
+    width: 186px;
+    position:absolute;
+    left: 0;
+    top: 120%;
+    /* cao bang thang <li> chua no */
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+/* khối  giả */
+.header_qr::before {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 100%;
+    height: 20px;
+    content: "";
+    display: block;
+}
+.header_qr-img {
+    width: 100%;
+}
+.header_qr-app {
+    display: flex;
+    /* flex la cho ngang hang */
+    justify-content: space-between;
+}
+/* lay thang qr link thu nhat */
+.header_qr-link:nth-child(1) {
+    margin-left: 0px;
+}
+.header_qr-link:nth-child(2) {
+    margin-right: 15px;
+}
+.header_qr-download{
+    height: 40px;
+}
+/* notification */
+.header_notify {
+    position: absolute;
+    top : 120%;
+    right : 0;
+    width: 404px;
+    border: 1px solid #d3d3d3;
+    background-color: var(--white-color);
+}
+.header_notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+.header_notify-header h3 {
+
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+
+}
+.header_notify-list {
+    padding-left:0;
+}
+.header_notify-items:hover {
+    display: flex;
+    background-color: rgb(237, 232, 232);
+
+}
+/* da doc thi mat mau */
+.header_notify-items--read {
+    background-color: rgba(227, 103, 20, 0.09);
+}
+.header_notify-link {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+}
+.header_notify-infor {
+    margin-left: 12px;
+}
+.header_notification-in4 {
+    display: block;
+    font-size: 14px;
+    color: var(--black-color);
+    font-weight: 400;
+}
+.header_notification-descriotion {
+    display: block;
+    font-size: 11px;
+    line-height: 1.6rem;
+    color: #756f6e;
+}
+.notify-img{
+    height: 40px;
+    object-fit: contain;
+}
+.header_notify-footer {
+    text-align: center;
+    padding: 12px 12px 12px 12px;
+}
+.header_notify-footer-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 12px 12px 12px 12px;
+}

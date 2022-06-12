@@ -1,0 +1,48 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color : rgb(168, 33, 209);
+}
+* {
+    box-sizing: inherit;
+    /* - Kế thừa giá trị 
+    thuộc tính box-sizing 
+    từ phần tử cha của nó. */
+}
+html {
+    font-size: 62.5%; 
+    /* 62.5% = 10px trong 1 rem */
+    line-height: 1.6rem;
+    /* 16px */
+    font-family: 'Roboto', sans-serif;
+    /*hien thi san-serif den khi roboto tai ve*/
+    box-sizing: border-box;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    /* max with co tac dung voi cac
+    man hinh nho hon with */
+    margin: 0 auto;
+}
+.grid_full-width {
+    width: 100%;
+    /* neu kh muon su dung with 1200px */
+}
+.grid_row {
+    display: flex;
+    flex-grow: wrap;
+    /* flex grow danhc ho nhung thang lon hon flex */
+}
+/* animation */
+@keyframes fadeIn {
+    from { 
+        opacity:0;
+    
+    }
+    to { 
+        opacity:1;
+    
+    }
+}
